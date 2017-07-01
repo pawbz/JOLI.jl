@@ -9,7 +9,7 @@ export joLinearOperator, joLinearOperatorException
 ############################################################
 ## type definition
 
-abstract joAbstractLinearOperator{DDT<:Number,RDT<:Number} <: joAbstractOperator
+abstract type joAbstractLinearOperator{DDT<:Number,RDT<:Number} <: joAbstractOperator end
 """
     joLinearOperator is glueing type & constructor
 
