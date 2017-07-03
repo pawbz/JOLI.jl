@@ -17,7 +17,7 @@ abstract type joAbstractLinearOperator{DDT<:Number,RDT<:Number} <: joAbstractOpe
     !!! Use joMatrix and joLinearFunction constructors
 
 """
-immutable joLinearOperator{DDT<:Number,RDT<:Number} <: joAbstractLinearOperator{DDT,RDT}
+struct joLinearOperator{DDT<:Number,RDT<:Number} <: joAbstractLinearOperator{DDT,RDT}
     name::String
     m::Integer
     n::Integer
