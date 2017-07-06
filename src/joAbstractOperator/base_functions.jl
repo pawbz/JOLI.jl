@@ -165,6 +165,7 @@ ishermitian(A :: joAbstractOperator) = throw(joAbstractOperatorException("isherm
 
 ############################################################
 ## overloaded Base .*(...jo...)
+## function Base.broadcast(::typeof(*), ...)
 
 # .*(jo,jo)
 ##.*(A::joAbstractOperator,B::joAbstractOperator) = throw(joAbstractOperatorException(".*(jo,jo) not implemented"))
@@ -189,6 +190,7 @@ ishermitian(A :: joAbstractOperator) = throw(joAbstractOperatorException("isherm
 
 ############################################################
 ## overloaded Base .\(...jo...)
+## function Base.broadcast(::typeof(\), ...)
 
 # .\(jo,jo)
 ##.\(A::joAbstractOperator,B::joAbstractOperator) = throw(joAbstractOperatorException(".\(jo,jo) not implemented"))
@@ -213,6 +215,7 @@ ishermitian(A :: joAbstractOperator) = throw(joAbstractOperatorException("isherm
 
 ############################################################
 ## overloaded Base .+(...jo...)
+## function Base.broadcast(::typeof(+), ...)
 
 # .+(jo,jo)
 ##.+(A::joAbstractOperator,B::joAbstractOperator) = throw(joAbstractOperatorException(".+(jo,jo) not implemented"))
@@ -237,6 +240,7 @@ ishermitian(A :: joAbstractOperator) = throw(joAbstractOperatorException("isherm
 
 ############################################################
 ## overloaded Base .-(...jo...)
+## function Base.broadcast(::typeof(-), ...)
 
 # .-(jo,jo)
 ##.-(A::joAbstractOperator,B::joAbstractOperator) = throw(joAbstractOperatorException(".-(jo,jo) not implemented"))
